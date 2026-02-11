@@ -101,3 +101,26 @@ console.log(ageJonas, ageSarah)
 console.log(averageAge)
 
 */
+
+//Strings and Template literals:
+
+const firstName = "Jonas";
+const job = "teacher";
+const birthYear = 1991
+const currentYear = 2037;
+
+const jonas = "I'm " + firstName + ", a " + (currentYear - birthYear) + " year old " + job + "!";
+
+console.log(jonas)
+
+const jonasNew = `I'm ${firstName}, a ${currentYear - birthYear} year old ${job}!`
+
+console.log(jonasNew)
+
+console.log("String \n\
+    with \n\
+    multiple lines");
+
+console.log(`String
+    with
+    multiple lines`)

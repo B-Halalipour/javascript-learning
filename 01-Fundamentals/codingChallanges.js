@@ -1,3 +1,5 @@
+//challange 1:
+/*
 const markWeightTD1 = 78
 const markHeightTD1 = 1.69
 const johnWeightTD1 = 92
@@ -18,3 +20,4 @@ const markHigherBMITD2 = markBMITD2 > johnBMITD2
 console.log(`Marks BMI in TD1: ${markBMITD1}, Johns BMI in TD1: ${johnBMITD1}. Mark has higher BMI in TD1: ${markHigherBMITD1}`)
 
 console.log(`Marks BMI in TD2: ${markBMITD2}, Johns BMI in TD1: ${johnBMITD2}. Mark has higher BMI in TD1: ${markHigherBMITD2}`)
+*/
