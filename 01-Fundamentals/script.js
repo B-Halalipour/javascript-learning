@@ -84,6 +84,8 @@ console.log(currentYear - 1991 > currentYear - 2018)
 
 // Operator Precedence:
 
+/*
+
 const currentYear = 2037;
 const ageJonas = currentYear - 1991;
 const ageSarah = currentYear - 2020;
@@ -98,3 +100,4 @@ const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah)
 console.log(averageAge)
 
+*/
