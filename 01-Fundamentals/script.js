@@ -48,6 +48,8 @@ console.log(job)
 */
 
 // Math Operators:
+
+/*
 const currentYear = 2037;
 const ageJonas = currentYear - 1991;
 const ageSarah = currentYear - 2020;
@@ -78,3 +80,21 @@ console.log(ageSarah >= 18)
 
 const isFullAge = ageSarah >= 18;
 console.log(currentYear - 1991 > currentYear - 2018)
+*/
+
+// Operator Precedence:
+
+const currentYear = 2037;
+const ageJonas = currentYear - 1991;
+const ageSarah = currentYear - 2020;
+
+console.log(currentYear - 1991 > currentYear - 2018)
+
+let x, y;
+
+x = y = 25 - 10 - 5;
+console.log(x, y)
+const averageAge = (ageJonas + ageSarah) / 2;
+console.log(ageJonas, ageSarah)
+console.log(averageAge)
+
