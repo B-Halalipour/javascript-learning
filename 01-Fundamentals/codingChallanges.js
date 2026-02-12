@@ -24,6 +24,8 @@ console.log(`Marks BMI in TD2: ${markBMITD2}, Johns BMI in TD1: ${johnBMITD2}. M
 
 //challange 2:
 
+/*
+
 const markWeightTD1 = 78
 const markHeightTD1 = 1.69
 const johnWeightTD1 = 92
@@ -57,4 +59,6 @@ if (markBMITD2 > johnBMITD2) {
 } else {
     console.log(`In test Data 2, John's's BMI (${johnBMITD2}) is higher than Markss (${markBMITD2})!`)
 }
+
+*/
 
