@@ -130,6 +130,7 @@ console.log(`String
 
 // if/else statements
 
+/*
 const age = 15;
 
 //const isOldEnough = age >= 18;
@@ -151,3 +152,6 @@ if (birthYear <= 2000) {
 }
 
 console.log(century)
+
+*/
+
