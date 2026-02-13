@@ -1,4 +1,4 @@
-//challange 1:
+//challenge 1:
 /*
 const markWeightTD1 = 78
 const markHeightTD1 = 1.69
@@ -22,7 +22,7 @@ console.log(`Marks BMI in TD1: ${markBMITD1}, Johns BMI in TD1: ${johnBMITD1}. M
 console.log(`Marks BMI in TD2: ${markBMITD2}, Johns BMI in TD1: ${johnBMITD2}. Mark has higher BMI in TD1: ${markHigherBMITD2}`)
 */
 
-//challange 2:
+//challenge 2:
 
 /*
 
@@ -62,3 +62,15 @@ if (markBMITD2 > johnBMITD2) {
 
 */
 
+// challenge 3:
+
+const scoreDolphins = (96 + 108 + 89) / 3
+const scoreKoalas = (88 + 91 + 110) / 3
+
+if (scoreDolphins > scoreKoalas) {
+    console.log("Dolphins win the trophy")
+} else if (scoreDolphins < scoreKoalas) {
+    console.log("Koalas win the trophy")
+} else {
+    console.log("Both win the trophy")
+}
