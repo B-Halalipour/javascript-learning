@@ -211,6 +211,8 @@ if (height) {
 // Equality operators:
 // strict equality operator "==="
 // doesn't do type coercion
+
+/*
 const age = "18"
 
 if (age === 18) console.log("You just became an adult (strict)")
@@ -234,3 +236,33 @@ if (favourite === 23) {
 }
 
 if (favourite !== 23) console.log("why not 23?")
+
+*/
+
+//Boolean Logic:
+
+
+const hasDriversLicense = true // A
+const hasGoodVision = true // B
+
+console.log(hasDriversLicense && hasGoodVision)
+console.log(hasDriversLicense || hasGoodVision)
+console.log(!hasDriversLicense)
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (shouldDrive) {
+//     console.log("Sara is able to drive!")
+// } else {
+//     console.log("Someone else should drive...")
+// }
+
+const isTired = false
+
+console.log(hasDriversLicense && hasGoodVision && isTired)
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log("Sara is able to drive!")
+} else {
+    console.log("Someone else should drive...")
+}
