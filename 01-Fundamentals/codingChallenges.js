@@ -64,6 +64,8 @@ if (markBMITD2 > johnBMITD2) {
 
 // challenge 3:
 
+/*
+
 const scoreDolphins = (96 + 108 + 89) / 3
 const scoreKoalas = (88 + 91 + 110) / 3
 
@@ -74,3 +76,6 @@ if (scoreDolphins > scoreKoalas) {
 } else {
     console.log("Both win the trophy")
 }
+
+*/
+
