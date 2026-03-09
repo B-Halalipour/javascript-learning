@@ -79,3 +79,8 @@ if (scoreDolphins > scoreKoalas) {
 
 */
 
+// challenge 4:
+const bill = 275;
+let tip = 0;
+console.log(`The bill was ${bill}, the tip was ${bill >= 15 && bill <= 300 ? tip = bill * 0.15 : tip = bill + 0.2}, and the total value ${bill + tip}`)
+
