@@ -50,8 +50,21 @@ console.log(num)
 // Parameter: is the place holder in the function
 // Argument: is the actual value that we use to fill in the place holder
 
+// function declaration:
+
 function calcAge1(birthYear) {
     return 2026 - birthYear
 }
 
-const BehnoudAge = calcAge1(1996)
+const age1 = calcAge1(1996)
+
+
+// function expression:
+
+const calcAge2 = function (birthYear) {
+    return 2026 - birthYear
+}
+
+const age2 = calcAge2(1993)
+
+console.log(age1, age2)
