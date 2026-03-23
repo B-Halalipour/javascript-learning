@@ -11,6 +11,8 @@ if (hasDriversLicense) console.log('I can drive :)')
 // const private = 534;
 */
 
+/*
+
 function logger() {
     console.log("My name is Jonas")
 }
@@ -41,3 +43,15 @@ console.log(appleOrangeJuice)
 
 const num = Number("23");
 console.log(num)
+
+*/
+
+// function declaration and expression
+// Parameter: is the place holder in the function
+// Argument: is the actual value that we use to fill in the place holder
+
+function calcAge1(birthYear) {
+    return 2026 - birthYear
+}
+
+const BehnoudAge = calcAge1(1996)
