@@ -19,3 +19,25 @@ logger()
 logger()
 logger()
 logger()
+
+function fruitProcessor(apples, oranges) {
+    const juice = `juice with ${apples} apples and ${oranges} oranges`
+
+    return juice
+
+}
+
+// capturing the returned value from the function
+const appleJuice = fruitProcessor(5, 0)
+console.log(appleJuice)
+
+// not capturing the value
+console.log(fruitProcessor(5, 0))
+
+const appleOrangeJuice = fruitProcessor(2, 4)
+console.log(appleOrangeJuice)
+
+// built in function
+
+const num = Number("23");
+console.log(num)
