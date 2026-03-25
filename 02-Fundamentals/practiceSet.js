@@ -56,3 +56,17 @@ const formatUsername = function (username) {
     return (username[0].toUpperCase() + username.slice(1).toLowerCase())
 }
 console.log(formatUsername("behNoud"))
+
+// Truthy/Falsy Tester:
+
+const checkValue = function (value) {
+    return value ? "Truthy" : "Falsy"
+}
+
+console.log(checkValue(0))
+console.log(checkValue(""))
+console.log(checkValue("hello"))
+console.log(checkValue(null))
+console.log(checkValue(undefined))
+console.log(checkValue([]))
+console.log(checkValue({}))
