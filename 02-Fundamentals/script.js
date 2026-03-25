@@ -133,7 +133,8 @@ console.log(yearsUntilRetirement(1996, "Behnoud"))
 
 */
 
-// Arraysd:
+// Arrays:
+/*
 
 const friend1 = "Michael"
 const friend2 = "Steven"
@@ -173,4 +174,4 @@ const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length -
 
 console.log(ages)
 
-
+*/
