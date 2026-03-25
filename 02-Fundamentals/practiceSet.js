@@ -50,3 +50,9 @@ const tipCalc = function (bill) {
 }
 
 console.log(tipCalc(300))
+
+// Username Formatter:
+const formatUsername = function (username) {
+    return (username[0].toUpperCase() + username.slice(1).toLowerCase())
+}
+console.log(formatUsername("behNoud"))
