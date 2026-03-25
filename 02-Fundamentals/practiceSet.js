@@ -40,7 +40,7 @@ console.log(gradeCalc(112))
 
 const tipCalc = function (bill) {
     let tip;
-    if (bill >= 50 && tip <= 300) {
+    if (bill >= 50 && bill <= 300) {
         tip = bill * 0.15
     } else {
         tip = (bill * 0.2)
@@ -70,3 +70,74 @@ console.log(checkValue(null))
 console.log(checkValue(undefined))
 console.log(checkValue([]))
 console.log(checkValue({}))
+
+// Level 3:
+
+// Login System:
+
+const login = function (username, password) {
+    return username === "admin" && password === "1234" ? "Login successful" : "Invalid credentials"
+}
+
+console.log(login("admin", "1234"))
+console.log(login("admin", "12345"))
+
+// BMI Calculator:
+
+const calcBMI = function (weight, height) {
+    const BMI = weight / (height ** 2);
+    if (BMI < 18.5) {
+        console.log("Underweight")
+    } else if (BMI >= 18.5 && BMI <= 24.9) {
+        console.log("Normal")
+    } else if (BMI >= 25 && BMI <= 29.9) {
+        console.log("Overweight")
+    } else {
+        console.log("Obese")
+    }
+}
+
+calcBMI(110, 1.78);
+
+// Team Wiiner: 
+const calcAvg = function (a, b, c) {
+    return (a + b + c) / 3;
+}
+const avg1 = calcAvg(10, 15, 20)
+const avg2 = calcAvg(30, 50, 90)
+const checkWinner = function (avg1, avg2) {
+    if (avg1 >= 2 * avg2) {
+        console.log("Team 1 won!")
+    } else if (avg2 >= 2 * avg1) {
+        console.log("Team 2 won")
+    } else { console.log("No one won") }
+}
+
+checkWinner(avg1, avg2)
+
+// Level 4:
+
+// Smart Calculator:
+
+const calculate = function (num1, num2, operator) {
+    const expr = operator;
+
+    switch (expr) {
+        case "+":
+            console.log(num1 + num2)
+            break;
+        case "-":
+            console.log(num1 - num2)
+            break;
+        case "*":
+            console.log(num1 * num2)
+            break;
+        case "/":
+            console.log(num1 / num2)
+            break;
+        default:
+            console.log("sorry the calculator doesn't have that operator")
+    }
+}
+
+calculate(2, 3, "+")
