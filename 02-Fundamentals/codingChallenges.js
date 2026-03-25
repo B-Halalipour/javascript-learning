@@ -1,3 +1,5 @@
+//challenge 1:
+/*
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
 const scoreDolphins = calcAverage(44, 23, 71);
@@ -14,3 +16,5 @@ const checkWinner = function (avgDolphins, avgKoalas) {
 };
 
 checkWinner(scoreDolphins, scoreKoalas);
+
+*/
