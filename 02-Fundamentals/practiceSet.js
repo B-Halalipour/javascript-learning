@@ -1,3 +1,6 @@
+/*
+
+
 // Level 1:
 
 // 1. Age checker:
@@ -141,3 +144,5 @@ const calculate = function (num1, num2, operator) {
 }
 
 calculate(2, 3, "+")
+
+*/

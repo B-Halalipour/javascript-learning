@@ -175,3 +175,49 @@ const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length -
 console.log(ages)
 
 */
+
+/*
+const friends = ["Michael", "Steven", "Peter"]
+
+//add elements:
+// "push" methode adds the element to the end of the array
+
+const newLength = friends.push("Jay")
+
+// "unshift" methode adds the element to the begining of the array
+friends.unshift("John")
+
+console.log(friends)
+console.log(newLength)
+
+
+// removing elemenet from the array:
+// removing from end of the array
+friends.pop();
+console.log(friends);
+const popped = friends.pop()
+console.log(friends);
+console.log(popped );
+//removing from begining of the array
+friends.shift();
+console.log(friends);
+
+// finding the position of a certain element in the array
+console.log(friends.indexOf("Steven"));
+
+console.log(friends.indexOf("Bob"));
+
+friends.push(23);
+
+// checking in certain element exists in our array or not
+console.log(friends.includes("Steven"));
+console.log(friends.includes("Bob"));
+console.log(friends.includes("23"));
+
+
+if (friends.includes("Steven")) {
+    console.log("You have a friend called Steven");
+}
+
+*/
+
