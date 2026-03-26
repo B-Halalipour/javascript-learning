@@ -156,3 +156,37 @@ console.log(nums);
 nums.pop()
 nums.shift()
 console.log(nums);
+
+// Smart check:
+const friends = [];
+const checkFriend = function(friendsName) {
+    if(friends.includes(friendsName)) {
+        console.log("You already have this friend");
+    } else {
+        friends.push(friendsName)
+        console.log("Adding friend...");
+    }
+}
+
+checkFriend("Maya")
+checkFriend("Maya")
+checkFriend("Abbie")
+checkFriend("Ann")
+checkFriend("Devin")
+checkFriend("Ewan")
+console.log(friends);
+
+// Remove by name:
+
+const removeFriend = function(name) {
+    if(!friends.includes(name)) {
+        console.log(`${name} is not your friend`);
+    } else {
+        const friendsPosition = friends.indexOf(name)
+        const deletedFriend = friends.splice(friendsPosition, 1)
+        console.log(`${deletedFriend} is no longer your friend`);
+    }
+}
+removeFriend("Behnoud")
+removeFriend("Abbie")
+console.log(friends);
