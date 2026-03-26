@@ -146,3 +146,13 @@ const calculate = function (num1, num2, operator) {
 calculate(2, 3, "+")
 
 */
+
+// Basicmanipulation
+
+const nums = [10, 20, 30]
+nums.unshift(5)
+nums.push(40)
+console.log(nums);
+nums.pop()
+nums.shift()
+console.log(nums);
