@@ -48,3 +48,13 @@ totals.push(bills[2] + tips[2])
 console.log(bills, tips, totals);
 
 */
+
+// Objects:
+
+const behnoud = {
+    firstName: "Behnoud",
+    lastName: "Halalipour",
+    age: 2026 - 1996,
+    job: "barista",
+    friends: ["Maya", "Devin", "Ashkan"]
+}
