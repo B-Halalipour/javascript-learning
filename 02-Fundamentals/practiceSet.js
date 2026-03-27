@@ -145,7 +145,6 @@ const calculate = function (num1, num2, operator) {
 
 calculate(2, 3, "+")
 
-*/
 
 // Basicmanipulation
 
@@ -190,3 +189,4 @@ const removeFriend = function(name) {
 removeFriend("Behnoud")
 removeFriend("Abbie")
 console.log(friends);
+*/
