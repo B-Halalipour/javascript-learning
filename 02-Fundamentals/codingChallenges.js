@@ -102,6 +102,7 @@ console.log(bills, tips, totals);
 
 // challenge 3:
 
+/*
 const mark = {
     fullName: "Mark Miller",
     mass: 78,
@@ -126,4 +127,6 @@ john.calcBMI()
 console.log(mark.bmi < john.bmi ? `John Smith's BMI (${john.bmi}) is higher than Mark Miller's (${mark.bmi})!` : `Mark Miller's BMI (${mark.bmi}) is higher than John Smith's (${john.bmi})!` 
 
 )
+*/
+
 
