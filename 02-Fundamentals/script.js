@@ -386,3 +386,42 @@ for(let i = 0; i < jonasArray.length; i++) {
 
 */
 
+
+/*
+// Looping Backwards and Loop in Loop:
+
+
+const jonasArray = [
+    "jonas",
+    "Schmedtmann",
+    2037 - 1991,
+    "teacher",
+    ["Michael", "Peter", "Steven"]
+]
+
+const reverseJonas = []
+
+for (let i = jonasArray.length -1; i >= 0; i--) {
+    reverseJonas.push(jonasArray[i])
+}
+
+console.log(reverseJonas);
+
+const reverseJonas2 = []
+for(let i = 0; i < jonasArray.length; i++) {
+    reverseJonas2.unshift(jonasArray[i])
+}
+
+console.log(reverseJonas2);
+
+
+for(let exercise = 1; exercise <= 3; exercise++) {
+    console.log(`-------- Starting exercise ${exercise}`);
+
+    for(let rep = 1; rep <= 5; rep++) {
+        console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`);
+    }
+}
+
+*/
+
