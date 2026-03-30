@@ -189,7 +189,7 @@ const removeFriend = function(name) {
 removeFriend("Behnoud")
 removeFriend("Abbie")
 console.log(friends);
-*/
+
 
 // Print only numbers:
 
@@ -198,7 +198,19 @@ const values = [10, "hello", 23, true, 50, "world"];
 const number = []
 for (let i = 0; i < values.length; i++) {
     if(typeof values[i] !== "number") continue;
-    number.push(values[i])
+    number.push(values[i]);
 }
 
 console.log(number);
+
+*/
+
+// Count Truthy values:
+const values = [0, "hi", null, 42, "", [], undefined];
+let count = 0;
+const truthy = [];
+for (let i = 0; i < values.length; i++) {
+    if(!values[i]) continue;
+    truthy.push(values[i])
+}
+console.log(truthy);
