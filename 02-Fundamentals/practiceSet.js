@@ -190,3 +190,15 @@ removeFriend("Behnoud")
 removeFriend("Abbie")
 console.log(friends);
 */
+
+// Print only numbers:
+
+const values = [10, "hello", 23, true, 50, "world"];
+
+const number = []
+for (let i = 0; i < values.length; i++) {
+    if(typeof values[i] !== "number") continue;
+    number.push(values[i])
+}
+
+console.log(number);
