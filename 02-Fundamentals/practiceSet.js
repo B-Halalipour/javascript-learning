@@ -273,7 +273,7 @@ for(let i = 0; i < users.length; i++) {
     activeUsers.push(users[i])
 }
 console.log(activeUsers);
-*/
+
 
 // Calculate total score
 
@@ -287,3 +287,14 @@ for(let i = 0; i < players.length; i++) {
     totalScore += players[i].score
 }
 console.log(totalScore);
+*/
+
+// Find highest score
+
+const scores = [10, 50, 30, 80, 40];
+
+let highestScore = scores[0];
+for(let i = 0; i < scores.length; i++) {
+    if(scores[i] > highestScore) highestScore = scores[i]
+}
+console.log(highestScore);
