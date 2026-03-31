@@ -215,7 +215,7 @@ for (let i = 0; i < values.length; i++) {
 }
 console.log(truthy);
 
-*/
+
 
 // Find First Negative Number:
 
@@ -227,7 +227,7 @@ for(let i = 0; i < nums.length; i++) {
     };
 }    
 
-
+*/
 // const findNegative = function(arr) {
 //     let negativeNumber;
 //     for(let i = 0; i < arr.length; i++) {
@@ -242,3 +242,16 @@ for(let i = 0; i < nums.length; i++) {
 // findNegative(nums)
 // console.log(negativeNumber);
 
+// Remove a user from array:
+
+const users = ["Maya", "Devin", "Abbie", "Ewan"];
+// write a logiv to remove "Abbie"
+const removeUser = function(usersArr, user) {
+    const userIndex = usersArr.indexOf(user)
+    const deletedUser = usersArr.splice(userIndex,1); 
+    return deletedUser;
+}
+
+removeUser(users,"Abbie")
+// console.log(deletedUser);
+console.log(users);
