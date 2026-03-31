@@ -203,7 +203,7 @@ for (let i = 0; i < values.length; i++) {
 
 console.log(number);
 
-*/
+
 
 // Count Truthy values:
 const values = [0, "hi", null, 42, "", [], undefined];
@@ -214,3 +214,31 @@ for (let i = 0; i < values.length; i++) {
     truthy.push(values[i])
 }
 console.log(truthy);
+
+*/
+
+// Find First Negative Number:
+
+const nums = [5, 12, -3, 7, -1];
+for(let i = 0; i < nums.length; i++) {
+    if(nums[i] < 0) {
+        console.log(nums[i]);
+        break;
+    };
+}    
+
+
+// const findNegative = function(arr) {
+//     let negativeNumber;
+//     for(let i = 0; i < arr.length; i++) {
+//         if(arr[i] < 0) {
+//          negativeNumber = arr[i];
+//         }
+//         break;
+//     }
+//     return negativeNumber;
+// }
+
+// findNegative(nums)
+// console.log(negativeNumber);
+
