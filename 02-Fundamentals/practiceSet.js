@@ -257,7 +257,7 @@ removeUser(users,"Abbie")
 // console.log(deletedUser);
 console.log(users);
 
-*/
+
 
 // Print active users only:
 
@@ -273,3 +273,17 @@ for(let i = 0; i < users.length; i++) {
     activeUsers.push(users[i])
 }
 console.log(activeUsers);
+*/
+
+// Calculate total score
+
+const players = [
+  { name: "A", score: 10 },
+  { name: "B", score: 20 },
+  { name: "C", score: 15 }
+];
+let totalScore = 0;
+for(let i = 0; i < players.length; i++) {
+    totalScore += players[i].score
+}
+console.log(totalScore);
