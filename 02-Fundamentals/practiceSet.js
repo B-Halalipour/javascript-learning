@@ -298,7 +298,7 @@ for(let i = 0; i < scores.length; i++) {
     if(scores[i] > highestScore) highestScore = scores[i]
 }
 console.log(highestScore);
-*/
+
 
 // Login system
 
@@ -311,10 +311,33 @@ const users = [
 const login = function(users, username, password) {
     for(let i = 0; i < users.length; i++) {
         if(users[i].username === username && users[i].password === password) {
-            console.log("Login successful");
-            break;
-        } else {console.log("Invalid credentials");}
+            return "Login successful";
+          
+        } 
+            
+        
     } 
+
+    return "Invalid credentials";
 }
 
 login(users, "admin", "1234")
+
+
+
+const users = ["Maya", "Devin", "Abbie", "Ewan"];
+const removeUser = function(usersArr, user) {
+    const userIndex = usersArr.indexOf(user);
+    if(userIndex === -1) {
+        return "User not found"
+    }
+
+    const deletedUser = usersArr.splice(userIndex,1)[0]
+    return deletedUser
+
+}
+
+const removed = removeUser(users, "Maya")
+console.log(users);
+console.log(removed);
+*/
