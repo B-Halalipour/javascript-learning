@@ -207,13 +207,14 @@ console.log(number);
 
 // Count Truthy values:
 const values = [0, "hi", null, 42, "", [], undefined];
-let count = 0;
 const truthy = [];
 for (let i = 0; i < values.length; i++) {
     if(!values[i]) continue;
     truthy.push(values[i])
 }
+const count = truthy.length
 console.log(truthy);
+console.log(count)
 
 
 
@@ -227,7 +228,7 @@ for(let i = 0; i < nums.length; i++) {
     };
 }    
 
-*/
+
 // const findNegative = function(arr) {
 //     let negativeNumber;
 //     for(let i = 0; i < arr.length; i++) {
@@ -255,3 +256,20 @@ const removeUser = function(usersArr, user) {
 removeUser(users,"Abbie")
 // console.log(deletedUser);
 console.log(users);
+
+*/
+
+// Print active users only:
+
+const users = [
+  { name: "Behnoud", active: true },
+  { name: "Maya", active: false },
+  { name: "Devin", active: true }
+];
+const activeUsers = []
+for(let i = 0; i < users.length; i++) {
+    if(users[i].active !== true) continue;
+
+    activeUsers.push(users[i])
+}
+console.log(activeUsers);
