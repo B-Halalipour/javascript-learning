@@ -287,7 +287,7 @@ for(let i = 0; i < players.length; i++) {
     totalScore += players[i].score
 }
 console.log(totalScore);
-*/
+
 
 // Find highest score
 
@@ -298,3 +298,23 @@ for(let i = 0; i < scores.length; i++) {
     if(scores[i] > highestScore) highestScore = scores[i]
 }
 console.log(highestScore);
+*/
+
+// Login system
+
+const users = [
+  { username: "admin", password: "1234" },
+  { username: "user", password: "abcd" }
+];
+
+
+const login = function(users, username, password) {
+    for(let i = 0; i < users.length; i++) {
+        if(users[i].username === username && users[i].password === password) {
+            console.log("Login successful");
+            break;
+        } else {console.log("Invalid credentials");}
+    } 
+}
+
+login(users, "admin", "1234")
