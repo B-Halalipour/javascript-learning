@@ -14,6 +14,8 @@ const addUser = function(usersArr, user) {
     
 }
 
+//Task2: Remove user if existed
+
 const removeUser = function (usersArr, user) {
     for(let i = 0; i < usersArr.length; i++) {
         if(user === usersArr[i]) {
@@ -25,6 +27,13 @@ const removeUser = function (usersArr, user) {
 
     
 }
+
+
+// Task3: Find User if existed:
+
+const findUser = function(usersArr, user) {
+   return usersArr.includes(user) ? "User found" : "User not found"
+}
 console.log(users);
 
 addUser(users, "Maya")
@@ -34,5 +43,7 @@ removeUser(users, "Maya")
 console.log(users);
 removeUser(users, "Abbie")
 console.log(users);
+console.log(findUser(users, "Behnoud"));
+console.log(findUser(users, "Devin"));
 
 
