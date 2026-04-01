@@ -42,16 +42,37 @@ const listUsers = function(usersArr) {
         console.log(usersArr[i]);
     }
 }
+
+// Task5: controller function:
+
+const handleUser = function (action, name) {
+    const functions = {
+        add: addUser,
+        remove: removeUser,
+        find: findUser,
+        list: listUsers
+    }
+
+     if (!functions[action]) {
+        return "Invalid action";
+    }
+
+    return functions[action](users, name)
+}
 console.log(users);
 
-addUser(users, "Maya")
-addUser(users, "Maryam")
+// addUser(users, "Maya")
+// addUser(users, "Maryam")
+// console.log(users);
+// removeUser(users, "Maya")
+// console.log(users);
+// removeUser(users, "Abbie")
+// console.log(users);
+// console.log(findUser(users, "Behnoud"));
+// console.log(findUser(users, "Devin"));
+// listUsers(users)
+
+handleUser("add", "Behnoud")
+handleUser("remove", "Behnoud")
 console.log(users);
-removeUser(users, "Maya")
-console.log(users);
-removeUser(users, "Abbie")
-console.log(users);
-console.log(findUser(users, "Behnoud"));
-console.log(findUser(users, "Devin"));
-listUsers(users)
 
