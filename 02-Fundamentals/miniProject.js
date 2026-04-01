@@ -1,3 +1,4 @@
+/*
 const users = ["Maya", "Devin", "Abbie"];
 
 //Task1: Adding a user if not existed:
@@ -76,3 +77,4 @@ handleUser("add", "Behnoud")
 handleUser("remove", "Behnoud")
 console.log(users);
 
+*/
