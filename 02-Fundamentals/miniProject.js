@@ -13,8 +13,26 @@ const addUser = function(usersArr, user) {
 
     
 }
+
+const removeUser = function (usersArr, user) {
+    for(let i = 0; i < usersArr.length; i++) {
+        if(user === usersArr[i]) {
+            const removedUser = usersArr.splice(i, 1)
+            return removedUser[0]
+        }
+    }
+    console.log("user not found");
+
+    
+}
 console.log(users);
 
-addUser(users, 0)
+addUser(users, "Maya")
+addUser(users, "Maryam")
 console.log(users);
-addUser(users,"Maya")
+removeUser(users, "Maya")
+console.log(users);
+removeUser(users, "Abbie")
+console.log(users);
+
+
