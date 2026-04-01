@@ -34,6 +34,14 @@ const removeUser = function (usersArr, user) {
 const findUser = function(usersArr, user) {
    return usersArr.includes(user) ? "User found" : "User not found"
 }
+
+//Task4: List Users:
+
+const listUsers = function(usersArr) {
+    for(let i = 0; i < usersArr.length; i++) {
+        console.log(usersArr[i]);
+    }
+}
 console.log(users);
 
 addUser(users, "Maya")
@@ -45,5 +53,5 @@ removeUser(users, "Abbie")
 console.log(users);
 console.log(findUser(users, "Behnoud"));
 console.log(findUser(users, "Devin"));
-
+listUsers(users)
 
