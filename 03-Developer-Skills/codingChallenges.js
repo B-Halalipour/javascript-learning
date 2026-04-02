@@ -93,4 +93,4 @@ const { totalHours, avg, day, count, fullTime } = timeTracker(hours);
 console.log(
   `Total hours worked: ${totalHours}, Average daily hours: ${avg}, The day with most hours worked ${day}, Number of days worked ${count}, Wheter the week was full-time (worked 35 hours or more): ${fullTime}`,
 );
-*
+*/
