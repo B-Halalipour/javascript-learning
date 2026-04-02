@@ -6,9 +6,9 @@ const x = 23;
 
 const calcAge = birthYear => 2037 - birthYear;
 console.log(calcAge(1996));
-*/
 
-//PRBOLEM:
+
+//PRBOLEM 1:
 // We work fro a company building a smart home thermometer. Our most recent task is this: "Given an array of temperaturas of one day, calculate the temperature aplitude. Keep in mind that sometimes there might be a sensor error."
 
 const tempratures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
@@ -24,6 +24,7 @@ const tempratures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
 // - Find min value in temp array
 // - Subtract min from max (amplitude) and return it
 
+// My solution:
 const calculateAmplitude = function (temperaturesArr) {
   //   let max = temperaturesArr[0];
   //   let min = temperaturesArr[0];
@@ -44,4 +45,35 @@ const calculateAmplitude = function (temperaturesArr) {
 const { min, max, amplitude } = calculateAmplitude(tempratures);
 console.log(
   `the min value of the array is: ${min}, the max value of the array is: ${max} and the amplitude is: ${amplitude}`,
+);
+*/
+
+// PROBLEM 2:
+// Function should now receive 2 arrays of tempratures
+
+// 1) Understanding the problem
+// - With two arrays, should we iplement functionality twice? No! just merge two arrays
+
+// 2) Breaking up into sub-problems
+// - merge 2 arrays
+const arr1 = [1, 2, 3, 4, 5, 6];
+const arr2 = [3, 5, 1, -2, -6, 6, -12];
+
+const calculateAmplitudeNew = function (t1, t2) {
+  const merged = t1.concat(t2);
+  let max = -Infinity;
+  let min = Infinity;
+  for (let i = 0; i < merged.length; i++) {
+    if (typeof merged[i] !== 'number') continue;
+    if (merged[i] > max) max = merged[i];
+    if (merged[i] < min) min = merged[i];
+  }
+  const amplitudeNew = max - min;
+  //   console.log(max);
+  //   console.log(min);
+  return { min, max, amplitudeNew };
+};
+const { min, max, amplitudeNew } = calculateAmplitudeNew(arr1, arr2);
+console.log(
+  `the min value of the array is: ${min}, the max value of the array is: ${max} and the amplitude is: ${amplitudeNew}`,
 );
