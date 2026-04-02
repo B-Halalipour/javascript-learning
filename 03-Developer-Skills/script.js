@@ -46,7 +46,7 @@ const { min, max, amplitude } = calculateAmplitude(tempratures);
 console.log(
   `the min value of the array is: ${min}, the max value of the array is: ${max} and the amplitude is: ${amplitude}`,
 );
-*/
+
 
 // PROBLEM 2:
 // Function should now receive 2 arrays of tempratures
@@ -76,4 +76,49 @@ const calculateAmplitudeNew = function (t1, t2) {
 const { min, max, amplitudeNew } = calculateAmplitudeNew(arr1, arr2);
 console.log(
   `the min value of the array is: ${min}, the max value of the array is: ${max} and the amplitude is: ${amplitudeNew}`,
+);
+*/
+const measureKevin = function () {
+  const measuremenet = {
+    type: 'temp',
+    unit: 'celsius',
+    // C) FIX
+    // value: Number(prompt('Degrees celsius')),
+    value: 10,
+  };
+
+  // B) FIND
+  console.log(measuremenet);
+  console.table(measuremenet);
+  //   console.log(measuremenet.value);
+  //   console.warn(measuremenet.value);
+  //   console.error(measuremenet.value);
+  const kelvin = measuremenet.value + 273;
+  return kelvin;
+};
+// A) IDENIFY
+console.log(measureKevin());
+
+// Using a debugger
+
+const calculateAmplitudeBug = function (t1, t2) {
+  const merged = t1.concat(t2);
+  let max = 0;
+  let min = 0;
+  for (let i = 0; i < merged.length; i++) {
+    if (typeof merged[i] !== 'number') continue;
+    if (merged[i] > max) max = merged[i];
+    if (merged[i] < min) min = merged[i];
+  }
+  const amplitudeBug = max - min;
+  //   console.log(max);
+  //   console.log(min);
+  return { min, max, amplitudeBug };
+};
+const { min, max, amplitudeBug } = calculateAmplitudeBug([3, 5, 1], [9, 4, 5]);
+// A) IDENTIFY
+console.log(
+  `  min: ${min}
+  max: ${max}
+  amploitude: ${amplitudeBug}`,
 );
