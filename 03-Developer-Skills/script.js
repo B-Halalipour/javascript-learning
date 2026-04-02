@@ -77,7 +77,7 @@ const { min, max, amplitudeNew } = calculateAmplitudeNew(arr1, arr2);
 console.log(
   `the min value of the array is: ${min}, the max value of the array is: ${max} and the amplitude is: ${amplitudeNew}`,
 );
-*/
+
 const measureKevin = function () {
   const measuremenet = {
     type: 'temp',
@@ -122,3 +122,4 @@ console.log(
   max: ${max}
   amploitude: ${amplitudeBug}`,
 );
+*/
