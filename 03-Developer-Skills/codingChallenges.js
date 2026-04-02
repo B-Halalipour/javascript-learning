@@ -11,7 +11,7 @@ Create a function 'printForecast' which takes in an array 'arr' and logs a strin
 
 TEST DATA 1: [17, 21, 23]
 TEST DATA 2: [12, 5, -5, 0, 4]
-*/
+
 
 // My solution:
 // const td1 = [17, 21, 23];
@@ -54,3 +54,40 @@ const printForecast = function (arr) {
 };
 
 printForecast(data1);
+*/
+
+// Challenge 2:
+/*
+ Let's say that you're building a time tracking application for freelancers. At some point in building this app, you need a function that receives daiky work hours for certain week, and returns:
+
+1. Total hours worked
+2. Average daily hours
+3. The day with most hours worked
+4. Number of days worked
+5. Wheter the week was full-time (worked 35 hours or more)
+
+TEST DATA : [7.5, 8, 6.5, 0, 8,5, 4, 0]
+ */
+
+const hours = [7.5, 8, 6.5, 0, 8.5, 4, 0];
+
+const timeTracker = function (hoursArr) {
+  let max = -Infinity;
+  let totalHours = 0;
+  let count = 0;
+  for (let i = 0; i < hoursArr.length; i++) {
+    const currentHour = hoursArr[i];
+    totalHours += currentHour;
+    if (currentHour > max) max = currentHour;
+    if (currentHour > 0) count += 1;
+  }
+  const fullTime = totalHours >= 35;
+  const avg = totalHours / hoursArr.length;
+  const day = hoursArr.indexOf(max) + 1;
+  return { totalHours, avg, day, count, fullTime };
+};
+
+const { totalHours, avg, day, count, fullTime } = timeTracker(hours);
+console.log(
+  `Total hours worked: ${totalHours}, Average daily hours: ${avg}, The day with most hours worked ${day}, Number of days worked ${count}, Wheter the week was full-time (worked 35 hours or more): ${fullTime}`,
+);
