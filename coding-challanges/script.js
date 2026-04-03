@@ -24,6 +24,7 @@ console.log(behnoud.age);
 */
 
 //Challenge 2:
+/*
 calcAvg = function () {
   let sum = 0;
   for (let i = 0; i < this.scores.length; i++) {
@@ -54,3 +55,22 @@ if (behnoudAvgScores > maryamAvgScores) {
 }
 
 console.log(behnoud.average, maryam.average);
+*/
+
+//Challenge 3:
+const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+const calcAmplitude = function (temps) {
+  let max = -Infinity;
+  let min = Infinity;
+  for (let i = 0; i < temps.length; i++) {
+    if (typeof temps[i] !== 'number') continue;
+    if (temps[i] > max) max = temps[i];
+    if (temps[i] < min) min = temps[i];
+  }
+  const amplitude = max - min;
+
+  return amplitude;
+};
+
+const amplitude = calcAmplitude(temperatures);
+console.log(amplitude);
