@@ -23,7 +23,7 @@ console.log(summary);
 console.log(behnoud.age);
 */
 
-//Challenge 2:
+// Challenge 2:
 /*
 calcAvg = function () {
   let sum = 0;
@@ -57,7 +57,9 @@ if (behnoudAvgScores > maryamAvgScores) {
 console.log(behnoud.average, maryam.average);
 */
 
-//Challenge 3:
+// Challenge 3:
+
+/*
 const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
 const calcAmplitude = function (temps) {
   let max = -Infinity;
@@ -73,4 +75,29 @@ const calcAmplitude = function (temps) {
 };
 
 const amplitude = calcAmplitude(temperatures);
+console.log(amplitude);
+*/
+
+// Challenge 4:
+
+const temps1 = [3, 5, 1];
+const temps2 = [9, 0, 5];
+
+const calcAmplitude = function (t1, t2) {
+  // merge both arrays:
+  const temps = t1.concat(t2);
+  // ignore errors
+  // find max & min
+  // return amplitude
+  let max = -Infinity;
+  let min = Infinity;
+  for (let i = 0; i < temps.length; i++) {
+    if (typeof temps[i] !== 'number') continue;
+    if (temps[i] > max) max = temps[i];
+    if (temps[i] < min) min = temps[i];
+  }
+  return max - min;
+};
+
+const amplitude = calcAmplitude(temps1, temps2);
 console.log(amplitude);
