@@ -79,7 +79,7 @@ console.log(amplitude);
 */
 
 // Challenge 4:
-
+/*
 const temps1 = [3, 5, 1];
 const temps2 = [9, 0, 5];
 
@@ -101,3 +101,4 @@ const calcAmplitude = function (t1, t2) {
 
 const amplitude = calcAmplitude(temps1, temps2);
 console.log(amplitude);
+*/
