@@ -8,5 +8,7 @@ console.log(btnsShowModal);
 for (let i = 0; i < btnsShowModal.length; i++) {
   btnsShowModal[i].addEventListener('click', function () {
     console.log(`show modal ${i + 1} clicked`);
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
   });
 }
