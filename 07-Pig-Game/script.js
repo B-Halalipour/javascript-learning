@@ -1,5 +1,6 @@
 'use strict';
-
+// My solution:
+/*
 // new game button:
 // activate player one
 // make players score 0
@@ -122,3 +123,6 @@ const pressHoldBtn = function () {
 };
 
 btnHold.addEventListener('click', pressHoldBtn);
+*/
+
+// Jonas solution:
