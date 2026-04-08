@@ -98,6 +98,8 @@ btnRollDice.addEventListener('click', rollDice);
 const pressHoldBtn = function () {
   if (playerOne.classList.contains('player--active')) {
     playerOneTotal += playerOneCurrent;
+    playerOneCurrent = 0;
+    playerOneCurrentScore.textContent = playerOneCurrent;
     playerOneTotalScore.textContent = playerOneTotal;
     if (playerOneTotal >= 100) {
       playerOne.classList.add('player--winner', 'name');
@@ -107,6 +109,8 @@ const pressHoldBtn = function () {
     }
   } else {
     playerTwoTotal += playerTwoCurrent;
+    playerTwoCurrent = 0;
+    playerTwoCurrentScore.textContent = playerTwoCurrent;
     playerTwoTotalScore.textContent = playerTwoTotal;
     if (playerTwoTotal >= 100) {
       playerTwo.classList.add('player--winner', 'name');
