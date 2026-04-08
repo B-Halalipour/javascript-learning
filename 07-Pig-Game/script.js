@@ -8,6 +8,9 @@
 
 const btnNewGame = document.querySelector('.btn--new');
 const dice = document.querySelector('.dice');
+const btnRollDice = document.querySelector('.btn--roll');
+const btnHold = document.querySelector('.btn--hold');
+
 const makePlayerOneCurrentScoreZero = function () {
   playerOneCurrentScore.textContent = 0;
 };
@@ -35,6 +38,8 @@ let playerTwoTotal = 0;
 const playerTwoCurrentScore = document.querySelector('#current--1');
 let playerTwoCurrent = 0;
 const newGame = function () {
+  playerOne.classList.remove('player--winner', 'name');
+  playerTwo.classList.remove('player--winner', 'name');
   playerOne.classList.add('player--active');
   playerTwo.classList.remove('player--active');
   dice.classList.add('hidden');
@@ -50,22 +55,66 @@ btnNewGame.addEventListener('click', newGame);
 
 // random number between 1-6
 // dice appears on the screen based on the generated number
+// nice number adds to current score if not one
 
-const btnRollDice = document.querySelector('.btn--roll');
 const rollDice = function () {
   const number = Math.trunc(Math.random() * 6) + 1;
   console.log(number);
-  if (number !== 1) {
-    dice.classList.remove('hidden');
-    dice.src = `dice-${number}.png`;
-    playerOneCurrent += number;
-    playerOneCurrentScore.textContent = playerOneCurrent;
+  if (playerOne.classList.contains('player--active')) {
+    if (number !== 1) {
+      dice.classList.remove('hidden');
+      dice.src = `dice-${number}.png`;
+      playerOneCurrent += number;
+      playerOneCurrentScore.textContent = playerOneCurrent;
+    } else {
+      dice.classList.add('hidden');
+      playerOneCurrent = 0;
+      playerOneCurrentScore.textContent = 0;
+      playerOne.classList.toggle('player--active');
+      playerTwo.classList.toggle('player--active');
+    }
   } else {
-    dice.classList.add('hidden');
-    playerOneCurrent = 0;
-    playerOneCurrentScore.textContent = 0;
-    playerOne.classList.toggle('player--active');
-    playerTwo.classList.toggle('player--active');
+    if (number !== 1) {
+      dice.classList.remove('hidden');
+      dice.src = `dice-${number}.png`;
+      playerTwoCurrent += number;
+      playerTwoCurrentScore.textContent = playerTwoCurrent;
+    } else {
+      dice.classList.add('hidden');
+      playerTwoCurrent = 0;
+      playerTwoCurrentScore.textContent = 0;
+      playerTwo.classList.toggle('player--active');
+      playerOne.classList.toggle('player--active');
+    }
   }
 };
 btnRollDice.addEventListener('click', rollDice);
+
+// pressing hold button:
+// toggles player
+// adds the current score to total score
+// checks if total score is more or equal to 100
+
+const pressHoldBtn = function () {
+  if (playerOne.classList.contains('player--active')) {
+    playerOneTotal += playerOneCurrent;
+    playerOneTotalScore.textContent = playerOneTotal;
+    if (playerOneTotal >= 100) {
+      playerOne.classList.add('player--winner', 'name');
+    } else {
+      playerOne.classList.toggle('player--active');
+      playerTwo.classList.toggle('player--active');
+    }
+  } else {
+    playerTwoTotal += playerTwoCurrent;
+    playerTwoTotalScore.textContent = playerTwoTotal;
+    if (playerTwoTotal >= 100) {
+      playerTwo.classList.add('player--winner', 'name');
+    } else {
+      playerTwo.classList.toggle('player--active');
+      playerOne.classList.toggle('player--active');
+    }
+  }
+};
+
+btnHold.addEventListener('click', pressHoldBtn);
