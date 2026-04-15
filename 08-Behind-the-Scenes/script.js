@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 function calcAge(birthYear) {
   const age = 2037 - birthYear;
   function printAge() {
@@ -33,3 +33,6 @@ function calcAge(birthYear) {
 
 const firstName = 'Jonas';
 calcAge(1991);
+*/
+
+// Hoisting and TDZ
