@@ -80,3 +80,11 @@ function deleteShoppingCard() {
 // Use const most of the time to declare varables and let if you want to change the variable later
 // you should declare the varibales at top of your code
 // declare your functions first and use them only after decleration
+
+var x = 1;
+// declaring variable using var will create that property in global window object
+let y = 2;
+const z = 3;
+console.log(x === window.x);
+console.log(y === window.y);
+console.log(z === window.z);
