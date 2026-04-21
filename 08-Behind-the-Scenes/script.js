@@ -91,7 +91,7 @@ console.log(z === window.z);
 */
 
 // "This" key word
-
+/*
 const calcAge = function (birthYear) {
   console.log(2037 - birthYear);
   // in a regular function call the "this" keyword will point to undefined
@@ -126,3 +126,37 @@ console.log(matilda);
 matilda.calcAge();
 
 const f = jonas.calcAge;
+*/
+var firstName = 'matilda';
+const jonas = {
+  firstName: 'Jonas',
+  year: 1991,
+  calcAge: function () {
+    // console.log(this);
+    console.log(2037 - this.year);
+    //Solution 1:
+
+    // const self = this; // self or that
+    // const isMillenial = function () {
+    //   console.log(self);
+    //   console.log(self.year >= 1981 && self.year <= 1996);
+    //   /*
+    //   console.log(this);
+    //   console.log(this.year >= 1981 && this.year <= 1996);
+    //   */
+    // };
+
+    // Solution 2
+    const isMillenial = () => {
+      console.log(this);
+      console.log(this.year >= 1981 && this.year <= 1996);
+    };
+    isMillenial();
+  },
+  greet: () => {
+    console.log(this);
+    console.log(`hey ${this.firstName}`);
+  },
+};
+// jonas.greet();
+jonas.calcAge();
